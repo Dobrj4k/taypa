@@ -10,8 +10,9 @@
             width: 50px
             text-align: center
             line-height: 50px
-            background-color: #000
-            border-radius: 2px
+            color: #FFF
+            background-color: #1f5360
+            border-radius: 15px
         &:hover
             &.top
                 .submenu
@@ -20,7 +21,7 @@
                             opacity: 1
                             top: #{$i*50}px
                             transform: rotate(0deg)
-                            border-top: 1px dashed darken(#FFF,20%)
+                            // border-top: 1px dashed darken(#FFF,20%)
                             transition-delay: #{$i*0.08}s
             &.right
                 .submenu
@@ -30,7 +31,7 @@
                             top: #{-$i*51}px
                             transform: rotateY(0deg)
                             transition-delay: #{$i*0.08}s
-                            border-left: 1px dashed darken(#FFF,15%)
+                            // border-top: 1px dashed darken(#FFF,15%)
     .submenu
         list-style-type: none
         padding: 0
@@ -48,18 +49,6 @@
                     i.fa
                         color: #333
                         z-index: 333
-                    &.phone
-                        i.fa
-                            background-color: #3b5999
-                    &.instagram
-                        i.fa
-                            background-color: #55acee
-                    &.telegram
-                        i.fa
-                            background-color: #dd4b39
-                    &.imo
-                        i.fa
-                            background-color: #e4405f
 
         @for $i from 1 through 4
             li:nth-child(#{$i})
