@@ -37,7 +37,7 @@
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: start;
+  justify-content: center;
 }
 .navbar .nav-row .nav-logo {
   width: 70%;
@@ -116,62 +116,23 @@
   bottom: 10%;
   z-index: 100;
   position: absolute;
+  display: flex;
+  flex-direction: row;
 }
 .call-me__content {
   display: flex;
   position: fixed;
-  width: 90%;
+  width: 100%;
   justify-content: center;
 }
-.call-me .custom-btn {
-  width: 100%;
-  width: 100%;
-  height: 50px;
-  font-size: 15px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #fff;
-  border-radius: 30px;
-  padding: 10px 25px;
-  font-weight: 600;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-  outline: none;
+.call-me__content a {
+  width: 40%;
 }
-.call-me .btn-11 {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  background: #1f5360;
-  color: #fff;
-  overflow: hidden;
+.call-me__content .btn-1 {
+  margin-right: 10px;
 }
-.call-me .btn-11:hover {
-  text-decoration: none;
-  color: #fff;
-}
-.call-me .btn-11:before {
-  position: absolute;
-  content: "";
-  display: inline-block;
-  top: -180px;
-  left: 0;
-  width: 30px;
-  height: 100%;
-  background-color: #fff;
-  animation: shiny-btn1 3s ease-in-out infinite;
-}
-.call-me .btn-11:hover {
-  opacity: 0.99;
-}
-.call-me .btn-11:active {
-  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3) -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2) inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+.call-me__content .btn-2 {
+  margin-left: 10px;
 }
 
 #content-bg-salaty {
@@ -205,119 +166,6 @@
   padding-top: 30px;
 }
 
-.menu {
-  z-index: 999;
-  position: fixed;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-.menu .share i.fa {
-  height: 50px;
-  width: 50px;
-  text-align: center;
-  line-height: 50px;
-  color: #FFF;
-  background-color: #1f5360;
-  border-radius: 15px;
-}
-.menu .share:hover.top .submenu li:nth-child(1) {
-  opacity: 1;
-  top: 50px;
-  transform: rotate(0deg);
-  transition-delay: 0.08s;
-}
-.menu .share:hover.top .submenu li:nth-child(2) {
-  opacity: 1;
-  top: 100px;
-  transform: rotate(0deg);
-  transition-delay: 0.16s;
-}
-.menu .share:hover.top .submenu li:nth-child(3) {
-  opacity: 1;
-  top: 150px;
-  transform: rotate(0deg);
-  transition-delay: 0.24s;
-}
-.menu .share:hover.top .submenu li:nth-child(4) {
-  opacity: 1;
-  top: 200px;
-  transform: rotate(0deg);
-  transition-delay: 0.32s;
-}
-.menu .share:hover.top .submenu li:nth-child(5) {
-  opacity: 1;
-  top: 250px;
-  transform: rotate(0deg);
-  transition-delay: 0.4s;
-}
-.menu .share:hover.right .submenu li:nth-child(1) {
-  opacity: 1;
-  top: -51px;
-  transform: rotateY(0deg);
-  transition-delay: 0.08s;
-}
-.menu .share:hover.right .submenu li:nth-child(2) {
-  opacity: 1;
-  top: -102px;
-  transform: rotateY(0deg);
-  transition-delay: 0.16s;
-}
-.menu .share:hover.right .submenu li:nth-child(3) {
-  opacity: 1;
-  top: -153px;
-  transform: rotateY(0deg);
-  transition-delay: 0.24s;
-}
-.menu .share:hover.right .submenu li:nth-child(4) {
-  opacity: 1;
-  top: -204px;
-  transform: rotateY(0deg);
-  transition-delay: 0.32s;
-}
-.menu .share:hover.right .submenu li:nth-child(5) {
-  opacity: 1;
-  top: -255px;
-  transform: rotateY(0deg);
-  transition-delay: 0.4s;
-}
-.menu .submenu {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-.menu .submenu li {
-  transition: all ease-in-out 0.5s;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 0;
-}
-.menu .submenu li a {
-  color: #FFF;
-}
-.menu .submenu li a:hover i.fa {
-  color: #333;
-  z-index: 333;
-}
-.menu .submenu li:nth-child(1) {
-  transform: rotateX(45deg);
-}
-.menu .submenu li:nth-child(2) {
-  transform: rotateX(90deg);
-}
-.menu .submenu li:nth-child(3) {
-  transform: rotateX(135deg);
-}
-.menu .submenu li:nth-child(4) {
-  transform: rotateX(180deg);
-}
-.menu.bottomRight {
-  bottom: 10px;
-  right: 10px;
-}
-
 .product {
   margin-top: 20px;
   margin-bottom: 100zpx;
@@ -339,6 +187,7 @@
 .product_item img {
   width: 100%;
   height: 100%;
+  background-color: #2C2C2C;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -2;
