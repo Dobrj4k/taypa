@@ -201,6 +201,10 @@
   font-weight: 700;
 }
 
+.lb-image {
+  background-color: #2C2C2C;
+}
+
 .pagination-block {
   display: flex;
   width: 100%;
