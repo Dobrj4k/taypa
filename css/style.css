@@ -107,8 +107,7 @@
   font-size: 18px;
   margin-bottom: 10px;
   margin-left: 10px;
-  font-style: italic;
-  font-family: Gagalin;
+  font-family: Didot;
   font-weight: 700;
 }
 
@@ -197,7 +196,7 @@
   font-size: 14px;
   margin-top: 2px;
   display: block;
-  font-family: Gagalin;
+  font-family: Didot;
   font-weight: 700;
 }
 
@@ -229,7 +228,7 @@
 }
 
 body {
-  font-family: Gagalin;
+  font-family: Didot;
   color: #1f5360;
   margin: 0;
   padding: 0;
